@@ -10,7 +10,7 @@ let card1 = {
     currentBalance: 5750.53,
     number: 5282345678901289,
     expirationYear: 2025,
-    expirationMonth: 9
+    expirationMonth: 9,
 };
 
 let card2 = {
@@ -21,10 +21,21 @@ let card2 = {
     currentBalance: 1343.53,
     number: 9232654321012032,
     expirationYear: 2026,
-    expirationMonth: 4
+    expirationMonth: 4,
 };
 
-let cards = [card1, card2];
+let card3 = {
+    type: 'debit',
+    isActive: true,
+    networkType: 'mastercard',
+    currencyType: 'GBP',
+    currentBalance: 3263.45,
+    number: 554259349582930,
+    expirationYear: 2028,
+    expirationMonth: 8,
+};
+
+let cards = [card1, card2, card3];
 
 //render
 document.write('<h1>', 'Hello, ' + currentUser.name, '</h1>');
