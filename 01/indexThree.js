@@ -26,10 +26,12 @@ let card2 = {
 
 document.write('<h1>', 'Hello, ' + currentUser.name, '</h1>');
 document.write('<h2>', 'Cards: ', '</h2>');
-document.write('div');
-document.write('<b>', card1.type + ' card', </b>');
-document.write('<b>', card1.networkType, '</b>');
-document.write('<b>','current balance','</b>');
-document.write('<span>', card1.currentBalance,'</span>');
+document.write('<div>');
+document.write('<b>', card1.type + ' card', </b>', '<br>');
+document.write('<b>', card1.networkType, '</b>', '<br>');
+document.write('<b>','current balance','</b>', '<br>');
+document.write('<span>', card1.currentBalance,'</span>', '<br>');
+document.write('<h4>', card1.number,'</h4>');
+document.write('<span>', card1.expirationMonth, '/', card1.expirationYear, '</span>');
 
-document.write('div');
+document.write('</div>');
