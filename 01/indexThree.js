@@ -105,9 +105,8 @@ for (let i = 0; i < cards.length; i++) {
     } else if (card.currencyType === 'EUR'){
         document.write('<span>', '€ ' + card.currentBalance,'</span>', '<br>');
     } else {
-        document.write('<span>', '£ ' + card.currentBalance,'</span>', '<br>');
-    document.write("</li>")
-}
+        document.write('<span>', '£ ' + card.currentBalance, '</span>', '<br>');
+    }
     document.write('<h4>', card.number,'</h4>');
     document.write('<span>', card.expirationMonth, '/', card.expirationYear, '</span>');
     document.write('</div>');
