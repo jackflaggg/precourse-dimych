@@ -95,17 +95,17 @@ document.write('<h2>', 'Cards: ', '</h2>');
 
 for (let i = 0; i < cards.length; i++) {
     let card = cards[i];
-    document.write('<div>');
+    document.write('<div class="card-block">');
     document.write('<b>', card.type + ' card', '</b>', '<br>');
 
     let networkLogo = '';
     switch (card.networkType) {
         case 'visa':
-            networkLogo = '<img src="1.png">';
+            networkLogo = '<img src="/png/1.png">';
             break;
 
         case 'mastercard':
-            networkLogo = '<img src="2.png">';
+            networkLogo = '<img src="/png/3.png">';
             break;
     }
 
