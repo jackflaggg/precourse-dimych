@@ -97,7 +97,19 @@ for (let i = 0; i < cards.length; i++) {
     let card = cards[i];
     document.write('<div>');
     document.write('<b>', card.type + ' card', '</b>', '<br>');
-    document.write('<b>', card.networkType, '</b>', '<br>');
+
+    let networkLogo = '';
+    switch (card.networkType) {
+        case 'visa':
+            networkLogo = '<img src="1.png">';
+            break;
+
+        case 'mastercard':
+            networkLogo = '<img src="2.png">';
+            break;
+    }
+
+    document.write(networkLogo);
     document.write('<b>','current balance','</b>', '<br>');
 
     if (card.currencyType === 'USD') {
