@@ -5,7 +5,13 @@ const currentUser = getCurrentUser();
 const cards = getCards();
 
 //render
-renderHeader()
+renderHeader(currentUser.name)
+
+for (let i = 0; i < cards.length; i++) {
+    const card = cards[i];
+    renderCard(card);
+
+}
 
 for (let i = 0; i < cards.length; i++) {
     let card = cards[i];
@@ -156,7 +162,11 @@ function getCards(){
     return cards;
 }
 
-function renderHeader(){
+function renderHeader(userName){
     document.write('<h1>', 'Hello, ' + currentUser.name, '</h1>');
     document.write('<h2>', 'Cards: ', '</h2>');
+}
+
+function renderCard(card){
+
 }
