@@ -143,10 +143,6 @@ for (let i = 0; i < cards.length; i++) {
 }
 
 
-let o1 = getCurrentUser();
-let o2 = getCurrentUser();
-let o3 = getCurrentUser();
-let o4 = getCurrentUser();
 function getCurrentUser(){
     //функция создает и возвращает объект
     let newUser = {
