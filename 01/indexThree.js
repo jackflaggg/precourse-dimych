@@ -20,7 +20,7 @@ let card1 = {
         {
             title: 'Order Revenue',
             amount: 874,
-            date: new Date(2022, 3, 25, 16, 44, 22) // Месяцы в JavaScript начинаются с 0, поэтому 3 - это апрель.
+            date: new Date(2022, 3, 25, 16, 43, 22) // Месяцы в JavaScript начинаются с 0, поэтому 3 - это апрель.
         },
         {
             title: 'Order Revenue',
@@ -140,5 +140,5 @@ for (let i = 0; i < cards.length; i++) {
     document.write("</ul>");
     document.write('</div>');
     document.write('<hr>');
-};
+}
 
