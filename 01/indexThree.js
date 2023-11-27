@@ -1,6 +1,6 @@
-let currentUser = {
-    name: 'Rasul',
-};
+// data
+let currentUser = getCurrentUser();
+// Single responsibility principle, он же принцип единой ответственности
 
 let card1 = {
     type: 'debit',
@@ -142,3 +142,15 @@ for (let i = 0; i < cards.length; i++) {
     document.write('<hr>');
 }
 
+
+let o1 = getCurrentUser();
+let o2 = getCurrentUser();
+let o3 = getCurrentUser();
+let o4 = getCurrentUser();
+function getCurrentUser(){
+    //функция создает и возвращает объект
+    let newUser = {
+        name: 'Rasul'
+    };
+    return newUser;
+}
